@@ -1,0 +1,17 @@
+{
+  "name": "freshcart-grocery-app",
+  "version": "1.0.0",
+  "description": "FreshCart - A modern grocery shopping application",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "keywords": ["grocery", "shopping", "cart", "express"],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.0"
+  }
+}
