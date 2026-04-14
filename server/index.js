@@ -37,9 +37,7 @@ app.get('*', (req, res) => {
 });
 
 // Start server
-if (process.env.VERCEL) {
-  module.exports = app;
-} else {
+if (!process.env.VERCEL) {
   app.listen(PORT, () => {
     console.log(`\n  🛒  FreshCart Grocery App`);
     console.log(`  ────────────────────────`);
@@ -48,3 +46,5 @@ if (process.env.VERCEL) {
     console.log(`\n  Press Ctrl+C to stop.\n`);
   });
 }
+
+module.exports = app;

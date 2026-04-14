@@ -6,9 +6,8 @@
 const fs = require('fs');
 const path = require('path');
 
-// Load seed data
-const dataPath = path.join(__dirname, '..', 'data', 'products.json');
-let products = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+// Load seed data using require so Vercel trace includes it
+let products = require('../data/products.json');
 
 /**
  * Get all products, optionally filtered by category or search query.
