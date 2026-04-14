@@ -6,7 +6,7 @@
     "price": 1.29,
     "unit": "per bunch",
     "emoji": "🍌",
-    "image": "https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=480&q=80",
+    "image": "/images/banana.jpg",
     "description": "Naturally ripened organic bananas, perfect for smoothies or snacking.",
     "inStock": true,
     "rating": 4.5
@@ -18,7 +18,7 @@
     "price": 3.99,
     "unit": "per box",
     "emoji": "🍓",
-    "image": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=480&q=80",
+    "image": "/images/strawberrie.jpg",
     "description": "Sweet, juicy strawberries picked at peak ripeness.",
     "inStock": true,
     "rating": 4.8
@@ -30,7 +30,7 @@
     "price": 1.49,
     "unit": "each",
     "emoji": "🥑",
-    "image": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=480&q=80",
+    "image": "/images/avocados.jpg",
     "description": "Creamy Hass avocados, great for toast and guacamole.",
     "inStock": true,
     "rating": 4.6
@@ -42,7 +42,7 @@
     "price": 2.49,
     "unit": "per bag",
     "emoji": "🥬",
-    "image": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=480&q=80",
+    "image": "/images/spinach.jpg",
     "description": "Tender baby spinach leaves, pre-washed and ready to eat.",
     "inStock": true,
     "rating": 4.3
@@ -54,7 +54,7 @@
     "price": 1.79,
     "unit": "each",
     "emoji": "🫑",
-    "image": "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=480&q=80",
+    "image": "/images/capsicum.jpg",
     "description": "Crisp, sweet red bell peppers for salads or stir-fry.",
     "inStock": true,
     "rating": 4.4
@@ -66,7 +66,7 @@
     "price": 3.49,
     "unit": "per gallon",
     "emoji": "🥛",
-    "image": "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=480&q=80",
+    "image": "/images/milk.jpg",
     "description": "Farm-fresh whole milk, rich and creamy.",
     "inStock": true,
     "rating": 4.7
@@ -78,7 +78,7 @@
     "price": 4.99,
     "unit": "dozen",
     "emoji": "🥚",
-    "image": "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=480&q=80",
+    "image": "/images/egg.jpg",
     "description": "Large free-range eggs from pasture-raised hens.",
     "inStock": true,
     "rating": 4.9
@@ -90,7 +90,7 @@
     "price": 5.29,
     "unit": "per tub",
     "emoji": "🫙",
-    "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=480&q=80",
+    "image": "/images/yogurt.jpg",
     "description": "Thick, protein-packed plain Greek yogurt.",
     "inStock": true,
     "rating": 4.5
@@ -102,7 +102,7 @@
     "price": 4.49,
     "unit": "per block",
     "emoji": "🧀",
-    "image": "https://images.unsplash.com/photo-1618164436241-4473940d1f5c?w=480&q=80",
+    "image": "/images/cheese.jpg",
     "description": "Sharp aged cheddar, perfect for sandwiches or snacking.",
     "inStock": true,
     "rating": 4.6
@@ -114,7 +114,7 @@
     "price": 4.99,
     "unit": "per loaf",
     "emoji": "🍞",
-    "image": "https://plus.unsplash.com/premium_photo-1700767181915-8a1bc379cae7?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "/images/bread.jpg",
     "description": "Artisan sourdough with a crispy crust and tangy flavor.",
     "inStock": true,
     "rating": 4.8
@@ -126,7 +126,7 @@
     "price": 6.49,
     "unit": "4-pack",
     "emoji": "🥐",
-    "image": "https://images.unsplash.com/photo-1612366747681-e4ca6992b1e9?q=80&w=804&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "/images/croissants.jpg",
     "description": "Flaky, buttery French croissants, freshly baked.",
     "inStock": true,
     "rating": 4.7
@@ -138,7 +138,7 @@
     "price": 5.99,
     "unit": "4-pack",
     "emoji": "🧁",
-    "image": "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=480&q=80",
+    "image": "/images/muffins.jpg",
     "description": "Soft, fluffy muffins loaded with real blueberries.",
     "inStock": false,
     "rating": 4.4
@@ -150,7 +150,7 @@
     "price": 4.29,
     "unit": "per carton",
     "emoji": "🧃",
-    "image": "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=480&q=80",
+    "image": "/images/juice.jpg",
     "description": "100% pure squeezed orange juice, no sugar added.",
     "inStock": true,
     "rating": 4.5
@@ -162,7 +162,7 @@
     "price": 3.99,
     "unit": "20 bags",
     "emoji": "🍵",
-    "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?w=480&q=80",
+    "image": "/images/tea.jpg",
     "description": "Premium Japanese green tea, naturally antioxidant-rich.",
     "inStock": true,
     "rating": 4.6
@@ -174,7 +174,7 @@
     "price": 5.49,
     "unit": "12-pack",
     "emoji": "💧",
-    "image": "https://images.unsplash.com/photo-1559839914-17aae19cec71?w=480&q=80",
+    "image": "/images/sparklingwater.jpg",
     "description": "Refreshing naturally carbonated mineral water.",
     "inStock": true,
     "rating": 4.3
@@ -186,7 +186,7 @@
     "price": 7.99,
     "unit": "per bag",
     "emoji": "🥜",
-    "image": "https://images.unsplash.com/photo-1599599810694-b5b37304c041?w=480&q=80",
+    "image": "/images/mixednuts.jpg",
     "description": "Premium mix of almonds, cashews, walnuts, and pecans.",
     "inStock": true,
     "rating": 4.7
@@ -198,7 +198,7 @@
     "price": 3.49,
     "unit": "per bar",
     "emoji": "🍫",
-    "image": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=480&q=80",
+    "image": "/images/darkchocolate.jpg",
     "description": "72% cocoa dark chocolate, smooth and rich.",
     "inStock": true,
     "rating": 4.8
@@ -210,7 +210,7 @@
     "price": 3.99,
     "unit": "per bag",
     "emoji": "🌮",
-    "image": "https://plus.unsplash.com/premium_photo-1676466884050-3b95749bd1eb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "/images/tortillachips.jpg",
     "description": "Crispy stone-ground corn tortilla chips, lightly salted.",
     "inStock": true,
     "rating": 4.2
@@ -222,7 +222,7 @@
     "price": 8.99,
     "unit": "per lb",
     "emoji": "🍗",
-    "image": "https://images.unsplash.com/photo-1604503468506-a8da13d82791?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "/images/chickenbreast.jpg",
     "description": "Boneless skinless chicken breast, antibiotic-free.",
     "inStock": true,
     "rating": 4.5
@@ -234,7 +234,7 @@
     "price": 12.99,
     "unit": "per lb",
     "emoji": "🐟",
-    "image": "https://images.unsplash.com/photo-1499125562588-29fb8a56b5d5?w=480&q=80",
+    "image": "/images/salmon.jpg",
     "description": "Fresh wild-caught salmon fillets, omega-3 rich.",
     "inStock": true,
     "rating": 4.9
@@ -246,7 +246,7 @@
     "price": 6.99,
     "unit": "per lb",
     "emoji": "🥩",
-    "image": "https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=480&q=80",
+    "image": "/images/beef.jpg",
     "description": "Lean 90/10 ground beef, perfect for burgers or tacos.",
     "inStock": true,
     "rating": 4.4
@@ -258,7 +258,7 @@
     "price": 5.49,
     "unit": "per bag",
     "emoji": "🍚",
-    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=480&q=80",
+    "image": "/images/rice.jpg",
     "description": "Long-grain aromatic basmati rice, aged for flavor.",
     "inStock": true,
     "rating": 4.6
@@ -270,7 +270,7 @@
     "price": 8.99,
     "unit": "per bottle",
     "emoji": "🫒",
-    "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=480&q=80",
+    "image": "/images/oliveoil.jpg",
     "description": "Cold-pressed extra virgin olive oil from Italy.",
     "inStock": true,
     "rating": 4.8
@@ -282,7 +282,7 @@
     "price": 2.29,
     "unit": "per box",
     "emoji": "🍝",
-    "image": "https://images.unsplash.com/photo-1551462147-ff29053bfc14?w=480&q=80",
+    "image": "/images/pasta.jpg",
     "description": "Imported Italian penne pasta, bronze-cut for sauce grip.",
     "inStock": true,
     "rating": 4.5

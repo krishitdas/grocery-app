@@ -123,7 +123,7 @@ function renderProductCard(p) {
       <div class="product-image-wrap">
         <img src="${p.image}" alt="${p.name}" class="product-image" loading="lazy"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <span class="product-image-fallback" style="display:none">${p.emoji}</span>
+        <div class="product-emoji-fallback">${p.emoji}</div>
         ${!p.inStock ? '<span class="product-out-badge">Out of Stock</span>' : ''}
       </div>
       <div class="product-info">
@@ -208,7 +208,9 @@ function renderCart() {
   // Render items
   itemsContainer.innerHTML = currentCart.items.map(item => `
     <div class="cart-item" id="cart-item-${item.productId}">
-      <img src="${item.product.image}" alt="${item.product.name}" class="cart-item-image">
+      <img src="${item.product.image}" alt="${item.product.name}" class="cart-item-image" loading="lazy"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <span class="cart-item-emoji" style="display:none">${item.product.emoji}</span>
       <div class="cart-item-details">
         <div class="cart-item-name">${item.product.name}</div>
         <div class="cart-item-price">$${item.product.price.toFixed(2)} ${item.product.unit}</div>
@@ -312,7 +314,7 @@ function showCheckout() {
   summary.innerHTML = `
     ${currentCart.items.map(item => `
       <div class="checkout-summary-item">
-        <span class="item-name"><img src="${item.product.image}" alt="${item.product.name}" class="checkout-item-image"> ${item.product.name} × ${item.quantity}</span>
+        <span class="item-name"><img src="${item.product.image}" alt="${item.product.name}" class="checkout-item-image" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';"><span class="checkout-item-emoji" style="display:none">${item.product.emoji}</span> ${item.product.name} × ${item.quantity}</span>
         <span>$${item.subtotal.toFixed(2)}</span>
       </div>
     `).join('')}
@@ -374,7 +376,7 @@ function showConfirmation(order) {
     <div class="confirmation-details">
       ${order.items.map(item => `
         <div class="detail-row">
-          <span><img src="${item.image}" alt="${item.name}" class="confirmation-item-image"> ${item.name} × ${item.quantity}</span>
+          <span><img src="${item.image}" alt="${item.name}" class="confirmation-item-image" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';"><span class="confirmation-item-emoji" style="display:none">${item.emoji}</span> ${item.name} × ${item.quantity}</span>
           <span>$${item.subtotal.toFixed(2)}</span>
         </div>
       `).join('')}
@@ -435,7 +437,7 @@ async function showOrders() {
       </div>
       <div class="order-items-list">
         ${order.items.map(item => `
-          <span class="order-item-tag"><img src="${item.image}" alt="${item.name}" class="order-item-image"> ${item.name} × ${item.quantity}</span>
+          <span class="order-item-tag"><img src="${item.image}" alt="${item.name}" class="order-item-image" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';"><span class="order-item-emoji" style="display:none">${item.emoji}</span> ${item.name} × ${item.quantity}</span>
         `).join('')}
       </div>
       <div class="order-card-footer">
