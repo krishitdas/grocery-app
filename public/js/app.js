@@ -101,19 +101,27 @@ async function loadProducts(params = {}) {
   // Show skeletons
   grid.innerHTML = Array(8).fill('<div class="skeleton skeleton-card"></div>').join('');
 
-  const data = await api.getProducts(params);
-  if (!data.success) return;
+  try {
+    const data = await api.getProducts(params);
+    if (!data || !data.success) {
+      grid.innerHTML = '<div class="products-empty" style="display:block"><h3>Failed to load products</h3></div>';
+      return;
+    }
 
-  count.textContent = `${data.count} items`;
+    count.textContent = `${data.count} items`;
 
-  if (data.products.length === 0) {
-    grid.innerHTML = '';
-    empty.style.display = 'block';
-    return;
+    if (data.products.length === 0) {
+      grid.innerHTML = '';
+      empty.style.display = 'block';
+      return;
+    }
+
+    empty.style.display = 'none';
+    grid.innerHTML = data.products.map(product => renderProductCard(product)).join('');
+  } catch (error) {
+    console.error("Error loading products:", error);
+    grid.innerHTML = '<div class="products-empty" style="display:block; grid-column: 1 / -1; text-align: center;"><h3>Failed to load products.</h3><p>Server may be offline or misconfigured.</p></div>';
   }
-
-  empty.style.display = 'none';
-  grid.innerHTML = data.products.map(product => renderProductCard(product)).join('');
 }
 
 function renderProductCard(p) {

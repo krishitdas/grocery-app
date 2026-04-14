@@ -37,10 +37,14 @@ app.get('*', (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
-  console.log(`\n  🛒  FreshCart Grocery App`);
-  console.log(`  ────────────────────────`);
-  console.log(`  ✅  Server running at: http://localhost:${PORT}`);
-  console.log(`  📦  API available at:  http://localhost:${PORT}/api`);
-  console.log(`\n  Press Ctrl+C to stop.\n`);
-});
+if (process.env.VERCEL) {
+  module.exports = app;
+} else {
+  app.listen(PORT, () => {
+    console.log(`\n  🛒  FreshCart Grocery App`);
+    console.log(`  ────────────────────────`);
+    console.log(`  ✅  Server running at: http://localhost:${PORT}`);
+    console.log(`  📦  API available at:  http://localhost:${PORT}/api`);
+    console.log(`\n  Press Ctrl+C to stop.\n`);
+  });
+}
